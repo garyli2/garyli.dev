@@ -1,5 +1,5 @@
-import React from 'react';
-import { TextField, Button, makeStyles } from '@material-ui/core/';
+import React from "react";
+import { TextField, Button, makeStyles } from "@material-ui/core/";
 
 const useStyles = makeStyles({
     formField: {
@@ -7,10 +7,9 @@ const useStyles = makeStyles({
     },
 
     formButton: {
-        marginTop: '1%'
-    }
-
-})
+        marginTop: "1%",
+    },
+});
 
 const ContactForm = () => {
     const classes = useStyles();
@@ -46,8 +45,16 @@ const ContactForm = () => {
                 style={{ width: "calc(25% + 25% + 2%)", marginTop: "1.5%" }}
                 rows={8}
                 variant="filled"
-            /><br />
-            <Button className={classes.formButton} type="submit" variant="contained" color="primary">Submit</Button>
+            />
+            <br />
+            <Button
+                className={classes.formButton}
+                type="submit"
+                variant="contained"
+                color="primary"
+            >
+                Submit
+            </Button>
         </form>
     );
 };

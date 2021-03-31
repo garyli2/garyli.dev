@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <!--
+    <head>
+        <meta charset="utf-8" />
+        <!--
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
   -->
-  <meta name="viewport" content="width=1024">
-  <meta name="theme-color" content="#D6334B">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" as="style"
-    onload="this.onload=null;this.rel='stylesheet'" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="theme-color" content="#D6334B" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        />
 
-  <title>Gary Li</title>
-  <style>
-    /* Get rid of margin around div*/
-    body {
-      margin: 0 !important;
-    }
+        <title>Gary Li</title>
+        <style>
+            /* Get rid of margin around div*/
+            body {
+                margin: 0 !important;
+            }
 
-    /* make links not blue */
-    a {
-      color: black;
-    }
+            /* make links not blue */
+            a {
+                color: black;
+            }
 
-    /* ensure the navigation links have good padding */
-    p {
-      margin-block-start: 0em;
-      vertical-align: middle;
-    }
+            /* ensure the navigation links have good padding */
+            p {
+                margin-block-start: 0em;
+                vertical-align: middle;
+            }
 
-    /* For text onclick "fill" animation */
-    p a {
-      font-size: 2em;
-      font-weight: 800;
-      background: linear-gradient(to right, #FFDF00, #FFDF00 50%, white 50%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      background-position: 100%;
-      transition: background-position 275ms ease;
-      text-decoration: none;
-    }
+            /* For text onclick "fill" animation */
+            p a {
+                font-size: 2em;
+                font-weight: 800;
+                background: linear-gradient(
+                    to right,
+                    #ffdf00,
+                    #ffdf00 50%,
+                    white 50%
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 275ms ease;
+                text-decoration: none;
+            }
 
-    /* For text onclick "fill" animation */
-    a:hover {
-      background-position: 0 100%;
-    }
+            /* For text onclick "fill" animation */
+            a:hover {
+                background-position: 0 100%;
+            }
 
-    .aws-btn__content {
-      font-size: 18px;
-      
-    }
+            .aws-btn__content {
+                font-size: 18px;
+            }
 
-    .aws-btn--primary .aws-btn__content {
-      color: white !important;
-    }
+            .aws-btn--primary .aws-btn__content {
+                color: white !important;
+            }
 
-    .MuiTab-root {
-      min-width: 80px !important;
-    }
+            .MuiTab-root {
+                min-width: 80px !important;
+            }
 
-    ul {
-      margin-block-start: 0.6em;
-    }
+            ul {
+                margin-block-start: 0.6em;
+            }
+        </style>
+    </head>
 
-    
-  </style>
-</head>
+    <body>
+        <noscript>
+            <h1>Thank you for visiting my site.</h1>
+            <span
+                >If you are seeing this message, then you need to enable
+                Javascript to see my ReactJS based site.</span
+            >
+            <br />
+            <br />
+            <span
+                >If you prefer not to enable Javascript, then you can download
+                my resume <a href="">here</a> to learn more about me.</span
+            >
+        </noscript>
 
-<body>
-  <noscript>
-    <h1>Thank you for visiting my site. </h1>
-    <span>If you are seeing this message, then you need to enable Javascript to see my ReactJS based site.</span>
-    <br>
-    <br>
-    <span>If you prefer not to enable Javascript, then you can download my resume <a href="">here</a> to learn more
-      about me.</span>
-  </noscript>
+        <!-- A little help for the Netlify post-processing bots -->
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="inquiry"></textarea>
+        </form>
 
-  <!-- A little help for the Netlify post-processing bots -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="inquiry"></textarea>
-  </form>
+        <div id="root"></div>
+    </body>
 
-  <div id="root"></div>
-</body>
-
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
+    <script
+        type="text/javascript"
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+    ></script>
 </html>

@@ -1,15 +1,18 @@
 h1 {
-  font-size: 5vw;
-  max-width: 75vw;
-  color: #d6334b;
+    font-size: 5vw;
+    max-width: 75vw;
+    color: #d6334b;
 }
 h1 span {
-  background-image: linear-gradient(transparent calc(60% - 2px), #d6334b8f 1px);
-  background-size: 0;
-  background-repeat: no-repeat;
-  display: inline;
-  transition: 0.5s ease;
+    background-image: linear-gradient(
+        transparent calc(60% - 2px),
+        #d6334b8f 1px
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
 }
 h1 span {
-  background-size: 100%;
+    background-size: 100%;
 }
