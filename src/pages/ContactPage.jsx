@@ -27,7 +27,7 @@ export default function ContactPage() {
                     <Grid item xs={12}>
                         <Typography style={{ marginBottom: "1%" }} variant="h6">
                             You can reach me via email or with the form below.
-                            Looking forward to hear from you!
+                            Looking forward to hearing from you!
                         </Typography>
                         <ContactForm />
                     </Grid>
