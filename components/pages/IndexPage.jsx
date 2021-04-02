@@ -1,6 +1,6 @@
 import React from "react";
-import PersonalInformation from "../components/PersonalInformation.jsx";
-import RightSideNavigation from "../components/RightSideNavigation.jsx";
+import PersonalInformation from "../PersonalInformation.jsx";
+import RightSideNavigation from "../RightSideNavigation.jsx";
 import Grid from "@material-ui/core/Grid";
 
 export default function IndexPage() {

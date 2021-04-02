@@ -1,23 +1,19 @@
 import React from "react";
-import certification from "../assets/O_Java-SE-8-OCA-clr.gif";
-import PersonalInformation from "../components/PersonalInformation.jsx";
-import RightSideNavigation from "../components/RightSideNavigation.jsx";
-import { Typography, Grid, Button, Paper, Box } from "@material-ui/core/";
+import PersonalInformation from "../PersonalInformation.jsx";
+import RightSideNavigation from "../RightSideNavigation.jsx";
+import { Typography, Grid, Button, Paper, Box, MuiThemeProvider, createMuiTheme } from "@material-ui/core/";
 import Container from "@material-ui/core/Container";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
-import bike_portrait from "../assets/bike_ride.jpg";
-
 import { motion } from "framer-motion";
 
-import "../styles.css";
-import TabPanel from "../components/TabPanel";
+import TabPanel from "../TabPanel";
+
+import Image from 'next/image';
 
 export default function AboutPage(props) {
-    console.log("Received props :");
-    console.log(props.helloThereControl);
     return (
         <div
             style={{
@@ -36,22 +32,24 @@ export default function AboutPage(props) {
                     </Grid>
 
                     {/* Image of myself */}
-                    <Grid item xs={3} spacing={12}>
-                        <Paper outlined round elevation={4}>
-                            <Box p={2}>
-                                <img
-                                    src={bike_portrait}
-                                    style={{
-                                        width: "100%",
-                                    }}
-                                    alt="Gary's happy face"
-                                />
-                                <TabPanel />
-                                <center>
+                    <Grid item xs={3}>
+                        <Paper outlined={1} round={1} elevation={4} style={{ height: "100%" }}>
+                            <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+                                <div style={{ flex: 1 }}>
+                                    <Image
+                                        src={'/bike_ride.jpg'}
+                                        layout="responsive"
+                                        width={110}
+                                        height={130}
+                                        alt="Gary's happy face"
+                                    />
+                                </div>
+                                <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+                                    <TabPanel />
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        style={{ marginTop: "0%" }}
+                                        style={{ marginTop: "0%", borderRadius: "0px 0px 4px 4px" }}
                                         href="Gary Li Resume.pdf"
                                         download="Gary Li Resume.pdf"
                                     >
@@ -64,22 +62,23 @@ export default function AboutPage(props) {
                                         />
                                         Download My Resume
                                     </Button>
-                                </center>
-                            </Box>
+                                </div>
+                            </div>
                         </Paper>
                     </Grid>
 
                     {/* Personal description */}
                     <Grid item xs={8}>
-                        <motion.h2
+                        <motion.h3
                             animate={props.helloThereControl}
                             style={{
                                 textAlign: "center",
                                 fontSize: "3rem",
                                 marginBlockStart: "0",
+                                marginBlockEnd: "1rem"
                             }}
                         >
-                            <Typography
+                            {/* <Typography
                                 variant="h3"
                                 style={{
                                     fontFamily: "Roboto",
@@ -89,11 +88,12 @@ export default function AboutPage(props) {
                                     lineHeight: "28px",
                                 }}
                             >
-                                Hello there!
-                            </Typography>
-                        </motion.h2>
+                                
+                            </Typography> */}
+                            Hello there!
+                        </motion.h3>
 
-                        <Paper outlined round elevation={4}>
+                        <Paper outlined={1} round={1} elevation={4}>
                             <Box p={3}>
                                 <Typography
                                     variant="h6"

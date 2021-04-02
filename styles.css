@@ -1,0 +1,74 @@
+h1 {
+    font-size: 5vw;
+    max-width: 75vw;
+    color: #d6334b;
+}
+h1 span {
+    background-image: linear-gradient(
+        transparent calc(60% - 2px),
+        #d6334b8f 1px
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+}
+h1 span {
+    background-size: 100%;
+}
+
+/* Get rid of margin around div*/
+body {
+    margin: 0 !important;
+}
+
+/* make links not blue */
+a {
+    color: black;
+}
+
+/* ensure the navigation links have good padding */
+p {
+    margin-block-start: 0em;
+    vertical-align: middle;
+}
+
+/* For text onclick "fill" animation */
+p a {
+    font-size: 2em;
+    font-weight: 800;
+    background: linear-gradient(
+        to right,
+        #ffdf00,
+        #ffdf00 50%,
+        white 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+}
+
+/* For text onclick "fill" animation */
+a:hover {
+    background-position: 0 100%;
+}
+
+.aws-btn__content {
+    font-size: 18px;
+}
+
+.aws-btn--primary .aws-btn__content {
+    color: white !important;
+}
+
+.MuiTab-root {
+    min-width: 80px !important;
+}
+
+ul {
+    margin-block-start: 0.6em;
+}

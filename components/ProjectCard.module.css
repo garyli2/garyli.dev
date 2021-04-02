@@ -1,0 +1,14 @@
+.container {
+    max-width: 345px;
+    margin: 10px 10px 10px 10px;
+}
+
+.previewImage {
+    height: 10%;
+    padding-top: 56%;
+}
+
+.icon {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

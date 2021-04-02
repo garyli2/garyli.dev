@@ -1,0 +1,20 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.shortFieldsContainer {
+    margin-bottom: 1%;
+}
+
+.shortFormField {
+    width: 25%;
+}
+
+.longFormField {
+    width: calc(25% + 25% + 2%);
+}
+
+.submitBtnContainer {
+    margin-top: 1%;
+}

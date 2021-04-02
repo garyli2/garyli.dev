@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import certification from "../assets/O_Java-SE-8-OCA-clr.gif";
+
 export default function EmailInformation() {
     return (
         <div style={{ marginTop: "20px" }}>

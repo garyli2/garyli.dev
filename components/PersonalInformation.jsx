@@ -1,20 +1,17 @@
 import React from "react";
-import my_happy_face from "../assets/my_happy_face.svg";
 import ContactInformation from "./ContactInformation";
 import { Grid } from "@material-ui/core";
-import certification from "../assets/O_Java-SE-8-OCA-clr.gif";
+import Image from 'next/image'
 
 export default function PersonalInformation() {
     return (
         <Grid container direction="column">
             {/* My profile picture*/}
             <Grid item align="center">
-                <img
-                    src={my_happy_face}
-                    style={{
-                        width: "300px",
-                        height: "300px",
-                    }}
+                <Image
+                    src={"/my_happy_face.svg"}
+                    width={300}
+                    height={300}
                     alt="Gary's happy face"
                 />
             </Grid>
@@ -57,19 +54,20 @@ export default function PersonalInformation() {
 
             {/* Contact information*/}
             <Grid item>
-                <Grid container direction="row" justify="center">
+                <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
                     <Grid item>
                         <ContactInformation />
                     </Grid>
                     <Grid item>
-                        <img
-                            src={certification}
+                        <Image
+                            src={"/O_Java-SE-8-OCA-clr.gif"}
+                            width={170}
+                            height={100}
                             style={{
-                                width: "170px",
                                 marginLeft: "35px",
                                 marginTop: "-8px",
                             }}
-                        ></img>
+                        ></Image>
                     </Grid>
                 </Grid>
             </Grid>
