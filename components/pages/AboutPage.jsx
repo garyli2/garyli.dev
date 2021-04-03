@@ -22,7 +22,7 @@ export default function AboutPage(props) {
                 height: "100%",
             }}
         >
-            <Container maxWidth="lg" style={{ height: "100vh" }}>
+            <Container maxWidth="lg">
                 <Grid container justify="space-between">
                     {/* "About" headline */}
                     <Grid item xs={12}>
@@ -56,6 +56,7 @@ export default function AboutPage(props) {
                                         <FontAwesomeIcon
                                             icon={faFileDownload}
                                             style={{
+                                                maxHeight: '10px',
                                                 display: "inline",
                                                 marginRight: "5px",
                                             }}
