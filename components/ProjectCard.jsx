@@ -27,10 +27,10 @@ export default function ProjectCard(props) {
     let avatarElement;
     if (typeof props.avatarSrc === "string") {
         avatarElement = <Image
-        src={props.avatarSrc}
-        width={45}
-        height={45}
-    />
+            src={props.avatarSrc}
+            width={45}
+            height={45}
+        />
     } else {
         avatarElement = props.avatarSrc;
     }
@@ -43,18 +43,22 @@ export default function ProjectCard(props) {
                 title={props.title}
                 subheader={props.subHeader}
             />
-            <CardMedia
-                className={styles.previewImage}
-                image={props.previewImageSrc}
-                title={props.previewImageTitle}
-            />
+            <div style={{ position: "relative", width: "100%", maxHeight: "175px", height: "175px" }}>
+                <Image
+                    className={styles.previewImage}
+                    layout="fill"
+                    objectFit="scale-down"
+                    src={props.previewImageSrc}
+                    alt={props.previewImageTitle}
+                />
+            </div>
             <CardContent>
                 <Typography variant="body1" color="textPrimary" component="p">
                     {props.description}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <Grid container spacing={2} style={{marginLeft: "5px"}}>
+                <Grid container spacing={2} style={{ marginLeft: "5px" }}>
                     {props.iconArray.map(icon => (
                         <Grid item key={icon[1]}>
                             <FontAwesomeIcon
