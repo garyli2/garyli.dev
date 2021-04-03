@@ -4,13 +4,11 @@ import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
     return (
-        <form name="contact" method="post" className={styles.formContainer}>
-            <input type="hidden" name="form-name" value="contact" />
+        <form name="contact" action="https://formspree.io/f/xgereowb" method="post" className={styles.formContainer}>
             <div className={styles.shortFieldsContainer}>
                 <TextField
                     required
                     className={styles.shortFormField}
-                    id="name"
                     name="name"
                     label="Name"
                     variant="filled"
@@ -18,8 +16,8 @@ const ContactForm = () => {
                 <TextField
                     required
                     className={styles.shortFormField}
-                    id="email"
-                    name="email"
+                    type="email"
+                    name="_replyto"
                     label="Email"
                     style={{ marginLeft: "2%" }}
                     variant="filled"
@@ -27,7 +25,6 @@ const ContactForm = () => {
             </div>
 
             <TextField
-                id="inquiry"
                 name="inquiry"
                 label="Message for me"
                 multiline
