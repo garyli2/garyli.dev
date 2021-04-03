@@ -29,6 +29,7 @@ export default function ProjectCard(props) {
             src={props.avatarSrc}
             width={45}
             height={45}
+            alt=""
         />
     } else {
         avatarElement = props.avatarSrc;
@@ -48,7 +49,7 @@ export default function ProjectCard(props) {
                     layout="fill"
                     objectFit="scale-down"
                     src={props.previewImageSrc}
-                    alt={props.previewImageTitle}
+                    alt={props.previewImageDescription}
                 />
             </div>
             <CardContent>

@@ -66,7 +66,10 @@ export default function PersonalInformation() {
                         style={{
                             marginLeft: "35px",
                             marginTop: "-8px",
-                        }} />
+                        }}
+                        alt="Oracle Java SE 8 Certification Logo"
+                        />
+                        
                 </div>
             </Grid>
         </Grid>

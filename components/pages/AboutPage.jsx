@@ -41,7 +41,7 @@ export default function AboutPage(props) {
                                         layout="responsive"
                                         width={110}
                                         height={130}
-                                        alt="Gary's happy face"
+                                        alt="Gary riding a bicycle"
                                     />
                                 </div>
                                 <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
