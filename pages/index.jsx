@@ -15,11 +15,6 @@ import ContactPage from "../components/pages/ContactPage";
 export default function App() {
     library.add(fab, faCheckSquare, faCoffee);
 
-    const variants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-    };
-
     let helloThereControl = useAnimation();
 
     function playHelloThereAnimation() {

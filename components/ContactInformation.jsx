@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import LinkedinInformation from "./LinkedinInformation.jsx";
 import EmailInformation from "./EmailInformation.jsx";
 
