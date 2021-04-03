@@ -7,6 +7,10 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../theme";
 
 import "../styles.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 export default function App(props) {
     const { Component, pageProps } = props;
