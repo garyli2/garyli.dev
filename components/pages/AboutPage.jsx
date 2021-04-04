@@ -77,18 +77,6 @@ export default function AboutPage(props) {
                                 marginBlockEnd: "1rem"
                             }}
                         >
-                            {/* <Typography
-                                variant="h3"
-                                style={{
-                                    fontFamily: "Roboto",
-                                    fontStyle: "normal",
-                                    fontWeight: "500",
-                                    fontSize: "60px",
-                                    lineHeight: "28px",
-                                }}
-                            >
-                                
-                            </Typography> */}
                             Hello there!
                         </motion.h3>
 
