@@ -54,22 +54,18 @@ export default function PersonalInformation() {
 
             {/* Contact information*/}
             <Grid item style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "50%" }}>
-                    <div style={{ flex: 1, }}>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "40%" }}>
+                    <div style={{ flex: 1, height: "100%", display: "flex", alignItems: "center" }}>
                         <ContactInformation />
                     </div>
 
                     <Image
                         src={"/O_Java-SE-8-OCA-clr.gif"}
-                        width={170}
+                        width={160}
                         height={100}
-                        style={{
-                            marginLeft: "35px",
-                            marginTop: "-8px",
-                        }}
                         alt="Oracle Java SE 8 Certification Logo"
-                        />
-                        
+                    />
+
                 </div>
             </Grid>
         </Grid>

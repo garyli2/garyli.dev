@@ -8,7 +8,9 @@ export default function ContactInformation() {
             style={{
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center"
+                justifyContent: "space-between",
+                height: "80%"
+
             }}
         >
             <LinkedinInformation />
