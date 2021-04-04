@@ -17,7 +17,7 @@ export default function ContactPage() {
                 <Grid container justify="space-between">
                     {/* "About" headline */}
                     <Grid item xs={12}>
-                        <h1>
+                        <h1 style={{ marginBlockEnd: "2rem" }}>
                             <span>Contact</span>
                         </h1>
                     </Grid>
