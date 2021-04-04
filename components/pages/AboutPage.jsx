@@ -1,7 +1,5 @@
 import React from "react";
-import PersonalInformation from "../PersonalInformation.jsx";
-import RightSideNavigation from "../RightSideNavigation.jsx";
-import { Typography, Grid, Button, Paper, Box, MuiThemeProvider, createMuiTheme } from "@material-ui/core/";
+import { Typography, Grid, Button, Paper, Box } from "@material-ui/core/";
 import Container from "@material-ui/core/Container";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
