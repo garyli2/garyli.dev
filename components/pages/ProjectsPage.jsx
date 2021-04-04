@@ -29,7 +29,7 @@ export default function ProjectsPage() {
                     <Grid item xs={12} style={{ marginTop: "5%" }}>
                         <Carousel arrows slidesPerPage={3}>
                             <ProjectCard
-                                avatarSrc="https://semestershare.com/images/logo_letter.png"
+                                avatarSrc="/semestershare_logo.png"
                                 title="SemesterShare"
                                 subHeader="2018 - 2020"
                                 previewImageSrc="/semestershare_preview.png"
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
                             />
 
                             <ProjectCard
-                                avatarSrc="https://cdn.glitch.com/0125a06b-d48f-44f8-826f-276383ee0687%2Fprofile.png?v=1578347345108"
+                                avatarSrc="/equationspace_logo.png"
                                 title="EquationSpace"
                                 subHeader="2019"
                                 previewImageSrc="/equationspace_preview.png"
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
                             />
 
                             <ProjectCard
-                                avatarSrc="https://steps4news.web.app/static/images/icon.png"
+                                avatarSrc="/steps4news_logo.png"
                                 title="Steps4News"
                                 subHeader="2020"
                                 previewImageSrc="/steps4news_preview.png"
