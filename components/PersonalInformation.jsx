@@ -9,9 +9,9 @@ export default function PersonalInformation() {
             {/* My profile picture*/}
             <Grid item align="center">
                 <Image
-                    src={"/my_happy_face.svg"}
-                    width={300}
-                    height={300}
+                    src={"/my_happy_face.png"}
+                    width={275}
+                    height={275}
                     alt="Gary's happy face"
                 />
             </Grid>
