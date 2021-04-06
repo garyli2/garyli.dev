@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -9,16 +9,23 @@ import AboutPage from "../components/pages/AboutPage";
 
 import ProjectsPage from "../components/pages/ProjectsPage";
 
-import { useAnimation } from "framer-motion";
 import ContactPage from "../components/pages/ContactPage";
 
+const HELLO_TEXT_ANIMATION_CLASS_NAME = "animation";
+
 export default function App() {
+    const [helloThereAnimationClassName, setHelloThereAnimationClassName] = useState("");
     library.add(fab, faCheckSquare, faCoffee);
 
-    let helloThereControl = useAnimation();
+    function playHelloThereAnimation(origin, destination, direction) {
+        // only show animation when the user is coming down from the index page
+        if (origin.isFirst && direction === "down") {
+            setHelloThereAnimationClassName(HELLO_TEXT_ANIMATION_CLASS_NAME);
+        }
+    }
 
-    function playHelloThereAnimation() {
-        helloThereControl.start({ scale: [1, 1, 1, 1.25, 1] })
+    function onHelloAnimationEnd() {
+        setHelloThereAnimationClassName("");
     }
 
     return (
@@ -38,7 +45,7 @@ export default function App() {
                         </div>
 
                         <div className="section" data-anchor="about">
-                            <AboutPage helloThereControl={helloThereControl} />
+                            <AboutPage helloThereAnimationClassName={helloThereAnimationClassName} onHelloAnimationEnd={onHelloAnimationEnd}/>
                         </div>
 
                         <div className="section" data-anchor="projects">

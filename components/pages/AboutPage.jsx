@@ -5,8 +5,6 @@ import Container from "@material-ui/core/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
-import { motion } from "framer-motion";
-
 import TabPanel from "../TabPanel";
 
 import Image from 'next/image';
@@ -68,17 +66,18 @@ export default function AboutPage(props) {
 
                     {/* Personal description */}
                     <Grid item xs={8}>
-                        <motion.h3
-                            animate={props.helloThereControl}
+                        <h3
+                            className={props.helloThereAnimationClassName}
                             style={{
                                 textAlign: "center",
                                 fontSize: "3rem",
                                 marginBlockStart: "0",
                                 marginBlockEnd: "1rem"
                             }}
+                            onAnimationEnd={props.onHelloAnimationEnd}
                         >
                             Hello there!
-                        </motion.h3>
+                        </h3>
 
                         <Paper outlined={1} round={1} elevation={4}>
                             <Box p={3}>

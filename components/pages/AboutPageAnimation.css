@@ -1,0 +1,16 @@
+.animation {
+    animation: helloThereAnimation 1s;
+    animation-delay: 250ms;
+}
+
+@keyframes helloThereAnimation {
+    0% {
+        font-size: 3rem;
+    }
+    50% {
+        font-size: 4rem;
+    }
+    100% {
+        font-size: 3rem;
+    }
+}

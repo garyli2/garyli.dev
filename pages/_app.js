@@ -12,6 +12,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import "../components/pages/AboutPageAnimation.css";
+
 export default function App(props) {
     const { Component, pageProps } = props;
 
