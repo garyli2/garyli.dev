@@ -1,5 +1,5 @@
 .animation {
-    animation: helloThereAnimation 1s;
+    animation: helloThereAnimation 0.75s;
     animation-delay: 250ms;
 }
 
@@ -8,7 +8,7 @@
         font-size: 3rem;
     }
     50% {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     100% {
         font-size: 3rem;
