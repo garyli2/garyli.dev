@@ -2,7 +2,6 @@
     width: 35vw;
     right: 0;
     height: 0px;
-    bottom: 0;
     position: fixed;
     border-bottom: calc(100vh - 0px) solid #D6334B;
     border-left: 15vw solid transparent;

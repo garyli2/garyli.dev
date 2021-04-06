@@ -47,7 +47,7 @@ export default function AboutPage(props) {
                                     <Button
                                         variant="contained"
                                         color="primary"
-                                        style={{ marginTop: "0%", borderRadius: "0px 0px 4px 4px" }}
+                                        style={{ marginTop: "0%", borderRadius: "0 0 4px 4px" }}
                                         href="Gary Li Resume.pdf"
                                         download="Gary Li Resume.pdf"
                                     >
