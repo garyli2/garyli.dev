@@ -33,6 +33,7 @@ export default function AboutPage(props) {
                             <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
                                 <div style={{ flex: 1 }}>
                                     <Image
+                                        quality={10}
                                         src={'/bike_ride.jpg'}
                                         layout="responsive"
                                         width={110}
