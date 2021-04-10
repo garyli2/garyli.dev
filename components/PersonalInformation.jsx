@@ -61,7 +61,7 @@ export default function PersonalInformation() {
 
                     <div style={{ flex: 1, marginLeft: "15px" }}>
                         <Image
-                            src={"/O_Java-SE-8-OCA-clr.gif"}
+                            src={"/O_Java-SE-8-OCA-clr.png"}
                             width={160}
                             height={100}
                             alt="Oracle Java SE 8 Certification Logo"
