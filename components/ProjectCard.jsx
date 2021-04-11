@@ -46,6 +46,7 @@ export default function ProjectCard(props) {
             <div style={{ position: "relative", width: "100%", maxHeight: "175px", height: "175px" }}>
                 <Image
                     className={styles.previewImage}
+                    quality={30}
                     layout="fill"
                     objectFit="scale-down"
                     src={props.previewImageSrc}
