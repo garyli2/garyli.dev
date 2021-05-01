@@ -23,9 +23,9 @@ export function TabPanel() {
                 {activeIndex === 0 && (
                     <TabContainer>
                         <ul>
-                            <li>ReactJS</li>
+                            <li>React</li>
+                            <li>JavaScript</li>
                             <li>Material-UI</li>
-                            <li>Bootstrap</li>
                             <li>JQuery</li>
                             <li>HTML5</li>
                         </ul>
