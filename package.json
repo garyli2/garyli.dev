@@ -22,7 +22,7 @@
         "react-swipeable-views": "^0.13.9"
     },
     "devDependencies": {
-        "@next/bundle-analyzer": "^10.2.0",
+        "@next/bundle-analyzer": "^10.2.2",
         "eslint": "^7.26.0",
         "eslint-plugin-react": "^7.23.2",
         "prettier": "2.3.0",
