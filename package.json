@@ -19,7 +19,7 @@
         "react": "latest",
         "react-awesome-button": "^6.5.1",
         "react-dom": "latest",
-        "react-swipeable-views": "^0.13.9"
+        "react-swipeable-views": "^0.14.0"
     },
     "devDependencies": {
         "@next/bundle-analyzer": "^10.2.3",
