@@ -25,9 +25,9 @@ export function TabPanel() {
                         <ul>
                             <li>React</li>
                             <li>JavaScript</li>
-                            <li>Material-UI</li>
-                            <li>JQuery</li>
-                            <li>HTML5</li>
+                            <li>TypeScript</li>
+                            <li>MUI</li>
+                            <li>React Native</li>
                         </ul>
                     </TabContainer>
                 )}
@@ -35,10 +35,10 @@ export function TabPanel() {
                     <TabContainer>
                         <ul>
                             <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>Hibernate</li>
-                            <li>MySQL</li>
                             <li>Node.js</li>
+                            <li>Spring Boot</li>
+                            <li>Express</li>
+                            <li>SQL</li>
                         </ul>
                     </TabContainer>
                 )}
