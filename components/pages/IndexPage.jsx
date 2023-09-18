@@ -7,7 +7,7 @@ export default function IndexPage() {
     return <Grid container direction="row" alignItems="center"
         style={{
             backgroundColor: "rgb(236 236 236)",
-            height: "100%",
+            height: "100vh",
             width: "100%",
         }}>
         <Grid item style={{ width: "65vw" }}>

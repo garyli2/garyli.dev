@@ -1,7 +1,7 @@
 import React from "react";
 import ContactInformation from "./ContactInformation";
 import { Grid } from "@material-ui/core";
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 export default function PersonalInformation() {
     return (

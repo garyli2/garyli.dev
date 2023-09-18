@@ -10,7 +10,7 @@ export default function ContactPage() {
             style={{
                 backgroundColor: "rgb(245 245 245)",
                 width: "100%",
-                height: "100%",
+                height: "100vh",
             }}
         >
             <Container maxWidth="lg">

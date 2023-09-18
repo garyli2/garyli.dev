@@ -7,7 +7,7 @@ import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 
 import TabPanel from "../TabPanel";
 
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export default function AboutPage(props) {
     return (
@@ -15,7 +15,7 @@ export default function AboutPage(props) {
             style={{
                 backgroundColor: "rgb(245 245 245)",
                 width: "100%",
-                height: "100%",
+                height: "100vh",
             }}
         >
             <Container maxWidth="lg">

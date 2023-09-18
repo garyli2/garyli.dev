@@ -8,7 +8,7 @@ import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import styles from "./ProjectCard.module.css";
 
 // interface ProjectCardProps {

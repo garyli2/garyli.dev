@@ -15,7 +15,7 @@ export default function ProjectsPage() {
             style={{
                 backgroundColor: "rgb(236 236 236)",
                 width: "100%",
-                height: "100%",
+                height: "100vh",
             }}
         >
             <Container maxWidth="lg">
