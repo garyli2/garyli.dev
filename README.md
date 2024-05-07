@@ -12,6 +12,10 @@ This repo contains the source code for my personal site. Some notable features i
 - Next.js bundle analyzer support, which is enabled when the env var `ANALYZE` is true.
 - Dependencies are monitored and kept up to date via Github's dependabot.
 
+
+### Now with perfect Lighthouse metrics!
+![image](https://github.com/garyli2/garyli.dev/assets/40566874/e489a662-ea7f-43ac-a41c-c56b0b3a112d)
+
 ## Installation
 
 To run the development server:
