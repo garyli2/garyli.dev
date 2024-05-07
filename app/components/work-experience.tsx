@@ -76,7 +76,7 @@ const WorkExperience = () => {
       </div>
       <div className="mt-5 flex justify-center lg:w-6/12">
         <a href="./Gary%20Li%20Resume.pdf" download className="w-full rounded-3xl rounded-t-none">
-          <Button gradientMonochrome="info" className="w-full rounded-b-3xl rounded-t-none">
+          <Button gradientMonochrome="info" className="w-full rounded-b-3xl rounded-t-none focus:ring-0">
             <p className="text-xl lg:-ml-20 xl:-ml-32">See My Resume</p>
           </Button>
         </a>
