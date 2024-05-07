@@ -18,18 +18,18 @@ const Project = ({
     button: ReactElement;
 }) => {
 
-    return <Card className="max-w-80" theme={{
+    return <Card className="mx-auto max-w-80" theme={{
         root: {
-            children: 'flex h-full flex-col justify-between gap-2 p-7'
+            children: 'flex h-full flex-col justify-between gap-2 p-4'
         }
     }}>
-        <h5 className="normal-skew text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="2xl:normal-skew text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {name}
         </h5>
-        <p className="normal-skew p-1 font-normal text-gray-700 dark:text-gray-400">
+        <p className="2xl:normal-skew p-1 font-normal text-gray-700 dark:text-gray-400">
             {description}
         </p>
-        <div className="flex flex-row gap-3">
+        <div className="mb-3 flex flex-row gap-3">
             {icons}
         </div>
 
@@ -114,9 +114,9 @@ const PROJECTS = [
 
 const ProjectExperience = () => {
     return (
-        <div className="slanted-left -ml-24 mr-20 mt-10 flex w-1/2 flex-col items-end rounded-r-3xl bg-orange-100 p-10">
-            <h1 className="text-right text-5xl font-extrabold">What I&apos;ve worked on</h1>
-            <div className="slanted-left-right mr-8 mt-16 grid w-[90%] grid-cols-3 gap-5">
+        <div className="2xl:slanted-left flex h-full flex-col items-end gap-5 rounded-3xl bg-orange-100 pb-5 pt-10 lg:absolute lg:right-0 lg:w-7/12 lg:rounded-l-none">
+            <h1 className="pr-10 text-right text-3xl font-extrabold md:text-5xl">What I&apos;ve worked on</h1>
+            <div className="2xl:slanted-left-right grid w-full grid-cols-1 content-center gap-5 md:grid-cols-2 lg:px-10 2xl:mr-10 2xl:mt-20 2xl:w-11/12 2xl:grid-cols-3 2xl:pl-16">
                 {PROJECTS.map(proj => <Project key={proj.name} {...proj} />)}
             </div>
         </div>

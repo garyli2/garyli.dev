@@ -18,11 +18,11 @@ const Header = () => {
   return (
     <div className="mx-auto bg-white px-4 py-10">
       <div className="mx-auto flex max-w-screen-md flex-col items-center justify-center">
-        <div className="flex flex-row items-baseline gap-5">
-          <h1 className="text-7xl font-extrabold text-black">Gary Li</h1>
-          <h3 className="overflow-hidden whitespace-nowrap text-4xl text-gray-600">
+        <div className="flex flex-row items-baseline gap-3 md:gap-5">
+          <h1 className="text-4xl font-extrabold text-black md:text-7xl">Gary Li</h1>
+          <h2 className="overflow-hidden whitespace-nowrap text-lg text-gray-600 md:text-4xl">
             Full Stack Developer
-          </h3>
+          </h2>
         </div>
 
         {/* <Navigation /> */}

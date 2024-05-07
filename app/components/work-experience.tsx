@@ -31,7 +31,7 @@ const WorkExperienceItem = ({
       }} />
       <TimelineContent>
         <TimelineTime className="text-black">{time}</TimelineTime>
-        <TimelineTitle>{company}</TimelineTitle>
+        <TimelineTitle as="h2">{company}</TimelineTitle>
         <TimelineBody className='text-black'>{description}</TimelineBody>
       </TimelineContent>
     </TimelineItem>
@@ -67,20 +67,23 @@ const WORK_EXPERIENCES = [
 
 const WorkExperience = () => {
   return (
-    <div className="slanted-right ml-20 mt-10 w-1/2 rounded-l-3xl bg-sky-100 pt-10">
-      <h1 className="mx-10 text-5xl font-extrabold">Where I&apos;ve worked</h1>
-      <Timeline className="mx-10 mt-10 w-3/4 border-gray-500">
-        {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
-      </Timeline>
-      <div className="flex justify-center">
-        <a href="./Gary%20Li%20Resume.pdf" download className="w-full rounded-bl-3xl">
-          <Button gradientMonochrome="info" className="w-full rounded-bl-3xl rounded-tl-none">
-            <p className="-ml-16 text-xl">See My Resume</p>
+    <div className="left-0 w-full justify-between rounded-3xl bg-sky-100 pt-10">
+      <div className="flex flex-col gap-5 lg:w-5/12">
+        <h1 className="mx-10 text-3xl font-extrabold md:text-5xl">Where I&apos;ve worked</h1>
+        <Timeline className="mx-10 w-3/4 border-gray-500">
+          {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
+        </Timeline>
+      </div>
+      <div className="mt-5 flex justify-center lg:w-6/12">
+        <a href="./Gary%20Li%20Resume.pdf" download className="w-full rounded-3xl rounded-t-none">
+          <Button gradientMonochrome="info" className="w-full rounded-b-3xl rounded-t-none">
+            <p className="text-xl">See My Resume</p>
           </Button>
         </a>
-      </div>
+      </div >
 
-    </div>
+
+    </div >
   );
 };
 
