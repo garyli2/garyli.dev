@@ -23,9 +23,9 @@ const Project = ({
             children: 'flex h-full flex-col justify-between gap-2 p-2 md:p-4'
         }
     }}>
-        <h5 className="2xl:normal-skew text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="2xl:normal-skew text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {name}
-        </h5>
+        </h2>
         <p className="2xl:normal-skew p-1 font-normal text-gray-700 dark:text-gray-400">
             {description}
         </p>
