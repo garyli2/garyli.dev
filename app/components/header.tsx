@@ -1,19 +1,3 @@
-const Navigation = () => {
-  return (
-    <div className="mt-6 flex gap-10">
-      <a className="text-xl hover:animate-pulse" href="./projects">
-        Experiences
-      </a>
-      <a className="text-xl hover:animate-pulse" href="./projects">
-        Projects
-      </a>
-      <a className="text-xl hover:animate-pulse" href="./projects">
-        Contact
-      </a>
-    </div>
-  );
-};
-
 const Header = () => {
   return (
     <div className="mx-auto bg-white py-10">

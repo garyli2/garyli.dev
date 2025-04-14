@@ -1,4 +1,3 @@
-import { Card } from "flowbite-react";
 import { FaGithub, FaGitlab, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -7,7 +6,7 @@ const ContactMe = () => {
         <div className="my-10 rounded-3xl bg-amber-100 p-10">
             <h1 className="text-2xl font-extrabold md:text-5xl">Contact me</h1>
             <p className="mt-5 text-2xl">
-                Feel free to start a conversation on Linkedin or check out my other contributions!
+                Start a conversation on Linkedin with me or check out my other contributions!
             </p>
             <div className="mt-7 flex flex-wrap gap-16">
                 <a href="https://www.linkedin.com/in/gary-li-dev" className="flex items-center gap-2">
