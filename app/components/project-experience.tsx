@@ -4,7 +4,7 @@ import {
 } from "flowbite-react"
 import { ReactElement } from "react";
 import { FaReact, FaJava, FaAndroid, FaLinux } from "react-icons/fa";
-import { SiTypescript, SiJavascript, SiC, SiGraphql } from "react-icons/si";
+import { SiTypescript, SiC, SiGraphql, SiPython, SiKubernetes } from "react-icons/si";
 
 const Project = ({
     name,
@@ -52,8 +52,30 @@ const PROJECTS = [
         </div>,
         icons: [
             <FaReact key="react" size='32px' />,
+            <SiTypescript key="typescript" size="32px" />
+        ]
+    },
+    {
+        name: 'SixWheels',
+        description: 'Bike share mapper supporting the GBFS shared mobility standard',
+        button: <Button href='https://github.com/garyli2/SixWheels' target="_blank">
+            Github
+        </Button>,
+        icons: [
             <SiTypescript key="typescript" size="32px" />,
-            <SiJavascript key="javascript" size="32px" />,
+            <FaLinux key="linux" size="32px" />
+        ]
+    },
+    {
+        name: 'InfoGrep',
+        description: 'Scalable and open RAG framework for enterprise',
+        button: <Button href='https://github.com/SE-Exort' target="_blank">
+            Github
+        </Button>,
+        icons: [
+            <SiPython key="python" size="32px" />,
+            <SiTypescript key="typescript" size="32px" />,
+            <SiKubernetes key="kubernetes" size="32px" />
         ]
     },
     {
@@ -79,30 +101,10 @@ const PROJECTS = [
         ]
     },
     {
-        name: 'SemesterShare',
-        description: 'Track timetables and courses with friends',
-        button: <Button href='https://semestershare.com' target="_blank">
-            Site
-        </Button>,
-        icons: [
-            <SiJavascript key="javascript" size="32px" />
-        ]
-    },
-    {
-        name: 'EquationSpace',
-        description: 'Real-time collaborative graphing calculator',
-        button: <Button href='https://equationspace.com' target="_blank">
-            Site
-        </Button>,
-        icons: [
-            <SiJavascript key="javascript" size="32px" />
-        ]
-    },
-    {
         name: 'Steps4News',
         description: 'Track steps while listening to headlines',
         button: <Button href='https://github.com/garyli2/Steps4News' target="_blank">
-            Site
+            Github
         </Button>,
         icons: [
             <FaJava key="java" size="32px" />,
