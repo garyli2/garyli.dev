@@ -1,23 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
 @layer utilities {
-  .slanted-right {
-    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
-  }
-
-  .slanted-left {
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  .slanted-left-right {
-    transform: skew(-7deg);
-  }
-
-  .normal-skew {
-    transform: skew(4deg);
-  }
-
   .underline-skip-ink {
     text-decoration-skip-ink: none;
   }

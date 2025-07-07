@@ -21,7 +21,7 @@ const WorkExperienceItem = ({
   pointColor: string;
 }) => {
   return (
-    <TimelineItem>
+    <TimelineItem className="mb-5">
       <TimelinePoint theme={{
         marker: {
           base: {
@@ -40,50 +40,48 @@ const WorkExperienceItem = ({
 
 const WORK_EXPERIENCES = [
   {
-    time: "Jan - Apr 2024",
+    time: "May 2025 - Present",
     company: "StackAdapt",
-    description: "Building forecasting for better ad planning!",
+    description: "Innovating full-time for better ad planning!",
+    pointColor: 'bg-cyan-500'
+  },
+  {
+    time: "Jan - Apr 2024 & Sept - Dec 2024",
+    company: "StackAdapt",
+    description: "Building full stack ad forecasting features with Ruby on Rails and React.",
     pointColor: 'bg-cyan-500'
   },
   {
     time: "Jan - Apr 2023",
     company: "D2L",
-    description: "Explored novel and emerging AI applications and engineered internal full stack projects hosted on AWS. Leveraged OpenSearch to store text embeddings and perform ANN vector searches for semantic text similarity.",
+    description: "Engineered full stack RAG AI solutions on AWS with OpenSearch for embeddings storage and and ANN vector similarity searches.",
     pointColor: "bg-lime-500"
   },
   {
     time: "May - Aug 2022",
     company: "BlackBerry",
-    description: "Continued full stack work for the Mobile Threat Defence team on threat detection features. Developed React TypeScript UI for the management console and built corresponding CRUD APIs with Java Spring Boot and Hibernate.",
+    description: "Continued development of management features focusing on scalable and distributed event streaming using Apache Kafka.",
     pointColor: 'bg-zinc-500'
   },
   {
     time: "Sept - Dec 2021",
     company: "BlackBerry",
-    description: "Built full stack console management features for BlackBerry's Mobile Threat Defence team to detect and manage advanced corporate device threats.",
+    description: "Developed full stack management features for the Mobile Threat Defence team to manage advanced corporate device threats.",
     pointColor: 'bg-zinc-500'
   }
 ]
 
 const WorkExperience = () => {
   return (
-    <div className="left-0 w-full justify-between rounded-3xl bg-sky-100 pt-10">
-      <div className="flex flex-col gap-5 lg:w-5/12">
-        <h1 className="mx-10 text-2xl font-extrabold md:text-5xl">Where I&apos;ve worked</h1>
-        <Timeline className="mx-10 w-3/4 border-gray-500">
-          {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
-        </Timeline>
-      </div>
-      <div className="mt-5 flex justify-center lg:w-6/12">
-        <a href="./Gary%20Li%20Resume.pdf" download className="w-full rounded-3xl rounded-t-none">
-          <Button gradientMonochrome="info" className="w-full rounded-b-3xl rounded-t-none focus:ring-0">
-            <p className="text-xl lg:-ml-20 xl:-ml-32">See My Resume</p>
-          </Button>
-        </a>
-      </div >
-
-
-    </div >
+    <div className="rounded-3xl 2xl:rounded-r-none bg-sky-100 gap-5 flex flex-col pt-10">
+      <h1 className="ml-10 text-5xl font-extrabold">Work</h1>
+      <Timeline className=" border-gray-500 ml-5 xl:ml-10 flex flex-col w-9/10">
+        {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
+      </Timeline>
+      <Button className="w-full rounded-3xl rounded-t-none 2xl:rounded-r-none focus:ring-0" href="./Gary%20Li%20Resume.pdf">
+        <p className="text-xl">See My Resume</p>
+      </Button>
+    </div>
   );
 };
 
