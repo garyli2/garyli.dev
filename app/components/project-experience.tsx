@@ -115,7 +115,7 @@ const ProjectExperience = () => {
     return (
         <div className="flex flex-col gap-5 rounded-3xl 2xl:rounded-l-none bg-orange-100 dark:bg-[#3C3D37] p-10">
             <h1 className="text-end text-5xl font-extrabold dark:text-white">Projects</h1>
-            <div className="grow grid w-full grid-cols-2 content-center gap-3 md:grid-cols-3">
+            <div className="grow grid w-full grid-cols-1 md:grid-cols-2 content-center gap-3 lg:grid-cols-3">
                 {projects}
             </div>
         </div>
