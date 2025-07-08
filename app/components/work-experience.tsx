@@ -25,14 +25,15 @@ const WorkExperienceItem = ({
       <TimelinePoint theme={{
         marker: {
           base: {
-            vertical: `absolute -left-1.5 mt-1.5 size-3 rounded-full border border-white ${pointColor}`
+            horizontal: 'dark:bg-white',
+            vertical: `absolute -left-1.5 mt-1.5 size-3 rounded-full border border-white ${pointColor} dark:${pointColor} dark:border-white`
           }
         }
       }} />
       <TimelineContent>
-        <TimelineTime className="text-black">{time}</TimelineTime>
+        <TimelineTime className="text-black dark:text-white">{time}</TimelineTime>
         <TimelineTitle as="h2">{company}</TimelineTitle>
-        <TimelineBody className='text-black'>{description}</TimelineBody>
+        <TimelineBody className='text-black dark:text-white'>{description}</TimelineBody>
       </TimelineContent>
     </TimelineItem>
   );
@@ -73,12 +74,12 @@ const WORK_EXPERIENCES = [
 
 const WorkExperience = () => {
   return (
-    <div className="rounded-3xl 2xl:rounded-r-none bg-sky-100 gap-5 flex flex-col pt-10">
-      <h1 className="ml-10 text-5xl font-extrabold">Work</h1>
-      <Timeline className=" border-gray-500 ml-5 xl:ml-10 flex flex-col w-9/10">
+    <div className="rounded-3xl 2xl:rounded-r-none bg-sky-100 dark:bg-[#273F4F] gap-5 flex flex-col pt-10">
+      <h1 className="ml-10 text-5xl font-extrabold dark:text-white">Work</h1>
+      <Timeline className=" border-gray-500 dark:border-white ml-5 xl:ml-10 flex flex-col w-9/10">
         {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
       </Timeline>
-      <Button className="w-full rounded-3xl rounded-t-none 2xl:rounded-r-none focus:ring-0" href="./Gary%20Li%20Resume.pdf">
+      <Button className="w-full rounded-3xl rounded-t-none 2xl:rounded-r-none focus:ring-0 dark:bg-[#447D9B] dark:hover:bg-[#27363d]" href="./Gary%20Li%20Resume.pdf">
         <p className="text-xl">See My Resume</p>
       </Button>
     </div>

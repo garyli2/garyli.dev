@@ -27,7 +27,7 @@ const Project = ({
         <h2 className="2xl:normal-skew text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {name}
         </h2>
-        <p className="2xl:normal-skew p-1 font-normal text-gray-700 dark:text-gray-400">
+        <p className="2xl:normal-skew p-1 font-normal text-gray-700 dark:text-gray-300">
             {description}
         </p>
         <div className="mb-3 flex gap-3">
@@ -56,8 +56,8 @@ const PROJECTS = [
         githubUrl: 'https://github.com/garyli2/RadioMap',
         previewUrl: 'https://radiomap.ca',
         icons: [
-            <FaReact key="react" size='32px' />,
-            <SiTypescript key="typescript" size={ICON_SIZE} />
+            <FaReact key="react" size='32px' className="dark:text-white" />,
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
     {
@@ -65,8 +65,8 @@ const PROJECTS = [
         description: 'Bike share mapper supporting the GBFS shared mobility standard',
         githubUrl: 'https://github.com/garyli2/SixWheels',
         icons: [
-            <SiTypescript key="typescript" size={ICON_SIZE} />,
-            <FaLinux key="linux" size={ICON_SIZE} />
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />,
+            <FaLinux key="linux" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
     {
@@ -74,9 +74,9 @@ const PROJECTS = [
         description: 'Scalable and open RAG framework for enterprise',
         githubUrl: 'https://github.com/SE-Exort',
         icons: [
-            <SiPython key="python" size={ICON_SIZE} />,
-            <SiTypescript key="typescript" size={ICON_SIZE} />,
-            <SiKubernetes key="kubernetes" size={ICON_SIZE} />
+            <SiPython key="python" size={ICON_SIZE} className="dark:text-white" />,
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />,
+            <SiKubernetes key="kubernetes" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
     {
@@ -84,8 +84,8 @@ const PROJECTS = [
         description: 'Linux USB Mouse Driver Kernel Module',
         githubUrl: 'https://github.com/garyli2/USBMouse',
         icons: [
-            <SiC key="c" size={ICON_SIZE} />,
-            <FaLinux key="linux" size={ICON_SIZE} />
+            <SiC key="c" size={ICON_SIZE} className="dark:text-white" />,
+            <FaLinux key="linux" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
     {
@@ -93,8 +93,8 @@ const PROJECTS = [
         description: 'GraphQL API for a data-driven Toronto',
         githubUrl: 'https://github.com/garyli2/TorontoGQL',
         icons: [
-            <SiGraphql key="graphql" size={ICON_SIZE} />,
-            <SiTypescript key="typescript" size={ICON_SIZE} />
+            <SiGraphql key="graphql" size={ICON_SIZE} className="dark:text-white" />,
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
     {
@@ -102,8 +102,8 @@ const PROJECTS = [
         description: 'Responsive and minimal personal site',
         githubUrl: 'https://github.com/garyli2/garyli.dev',
         icons: [
-            <FaReact key="react" size={ICON_SIZE} />,
-            <SiTypescript key="typescript" size={ICON_SIZE} />
+            <FaReact key="react" size={ICON_SIZE} className="dark:text-white" />,
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />
         ]
     }
 
@@ -113,8 +113,8 @@ const ProjectExperience = () => {
     const projects = useMemo(() => PROJECTS.map(proj => <Project key={proj.name} {...proj} />), []);
 
     return (
-        <div className="flex flex-col gap-5 rounded-3xl 2xl:rounded-l-none bg-orange-100 p-10">
-            <h1 className="text-end text-5xl font-extrabold">Projects</h1>
+        <div className="flex flex-col gap-5 rounded-3xl 2xl:rounded-l-none bg-orange-100 dark:bg-[#3C3D37] p-10">
+            <h1 className="text-end text-5xl font-extrabold dark:text-white">Projects</h1>
             <div className="grow grid w-full grid-cols-2 content-center gap-3 md:grid-cols-3">
                 {projects}
             </div>
