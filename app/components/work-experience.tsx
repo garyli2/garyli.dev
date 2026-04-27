@@ -7,6 +7,7 @@ import {
   TimelineTime,
   TimelineTitle,
 } from "flowbite-react"
+import SectionCard from "./section-card";
 
 const WorkExperienceItem = ({
   time,
@@ -67,13 +68,7 @@ const WORK_EXPERIENCES = [
 
 const WorkExperience = () => {
   return (
-    <div className="rounded-3xl 2xl:rounded-r-none bg-sky-50 dark:bg-[#1E2A35] gap-5 flex flex-col overflow-hidden shadow-lg ring-1 ring-slate-300/60 dark:ring-white/5">
-      <div className="flex items-center gap-2 px-6 py-4 bg-white dark:bg-[#1a2535] border-b border-slate-300 dark:border-white/5">
-        <span className="font-mono text-sm text-slate-400 select-none">~</span>
-        <span className="font-mono text-emerald-600 dark:text-emerald-400 font-bold select-none">$</span>
-        <span className="font-mono text-lg text-slate-700 dark:text-slate-200 font-medium select-none">work-experience</span>
-        <span className="font-mono text-slate-300 dark:text-slate-600 select-none">█</span>
-      </div>
+    <SectionCard command="work-experience" className="2xl:rounded-r-none bg-sky-50 dark:bg-[#1E2A35] gap-5">
       <Timeline className=" border-sky-300 dark:border-sky-800/60 ml-5 xl:ml-10 mt-5 flex flex-col w-9/10">
         {WORK_EXPERIENCES.map(work => <WorkExperienceItem key={work.time} {...work} />)}
       </Timeline>
@@ -83,7 +78,7 @@ const WorkExperience = () => {
       >
         <p className="text-xl">See My Resume</p>
       </a>
-    </div>
+    </SectionCard>
   );
 };
 

@@ -1,6 +1,7 @@
 import { ReactElement, useMemo } from "react";
 import { FaReact, FaLinux } from "react-icons/fa";
 import { SiTypescript, SiC, SiGraphql, SiPython, SiKubernetes } from "react-icons/si";
+import SectionCard from "./section-card";
 
 const Project = ({
     name,
@@ -117,19 +118,13 @@ const ProjectExperience = () => {
     const projects = useMemo(() => PROJECTS.map(proj => <Project key={proj.name} {...proj} />), []);
 
     return (
-        <div className="flex flex-col gap-5 rounded-3xl 2xl:rounded-l-none bg-orange-50 dark:bg-[#1E2A35] overflow-hidden shadow-lg ring-1 ring-slate-300/60 dark:ring-white/5">
-            <div className="flex items-center gap-2 px-6 py-4 bg-white dark:bg-[#1a2535] border-b border-slate-300 dark:border-white/5">
-                <span className="font-mono text-sm text-slate-400 select-none">~</span>
-                <span className="font-mono text-emerald-600 dark:text-emerald-400 font-bold select-none">$</span>
-                <span className="font-mono text-lg text-slate-700 dark:text-slate-200 font-medium select-none">projects</span>
-                <span className="font-mono text-slate-300 dark:text-slate-600 select-none">█</span>
-            </div>
+        <SectionCard command="projects" className="2xl:rounded-l-none bg-orange-50 dark:bg-[#1E2A35] gap-5">
             <div className="flex-1 flex flex-col justify-center p-10">
                 <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 lg:grid-cols-3">
                     {projects}
                 </div>
             </div>
-        </div>
+        </SectionCard>
     );
 };
 
