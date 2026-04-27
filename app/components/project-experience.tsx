@@ -13,7 +13,7 @@ const Project = ({
     name: string;
     description: string;
     icons: ReactElement[];
-    githubUrl: string;
+    githubUrl?: string;
     previewUrl?: string;
 }) => {
     return (
@@ -30,14 +30,16 @@ const Project = ({
                 {icons}
             </div>
             <div className="flex gap-2">
-                <a
-                    href={githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="grow text-center rounded-xl bg-slate-700 hover:bg-slate-800 dark:bg-white/10 dark:hover:bg-white/20 text-white text-sm font-semibold py-2 transition-colors duration-200"
-                >
-                    Github
-                </a>
+                {githubUrl && (
+                    <a
+                        href={githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="grow text-center rounded-xl bg-slate-700 hover:bg-slate-800 dark:bg-white/10 dark:hover:bg-white/20 text-white text-sm font-semibold py-2 transition-colors duration-200"
+                    >
+                        Github
+                    </a>
+                )}
                 {previewUrl && (
                     <a
                         href={previewUrl}
@@ -75,6 +77,15 @@ const PROJECTS = [
         ]
     },
     {
+        name: 'WattColour',
+        description: 'Electric grid tracker for Ontario with detailed energy mix insights',
+        previewUrl: 'https://wattcolour.ca',
+        icons: [
+            <FaReact key="react" size={ICON_SIZE} className="dark:text-white" />,
+            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />
+        ]
+    },
+    {
         name: 'InfoGrep',
         description: 'Scalable and open RAG framework for enterprise',
         githubUrl: 'https://github.com/SE-Exort',
@@ -93,15 +104,7 @@ const PROJECTS = [
             <FaLinux key="linux" size={ICON_SIZE} className="dark:text-white" />
         ]
     },
-    {
-        name: 'TorontoGQL',
-        description: 'GraphQL API for a data-driven Toronto',
-        githubUrl: 'https://github.com/garyli2/TorontoGQL',
-        icons: [
-            <SiGraphql key="graphql" size={ICON_SIZE} className="dark:text-white" />,
-            <SiTypescript key="typescript" size={ICON_SIZE} className="dark:text-white" />
-        ]
-    },
+
     {
         name: 'imgary.li',
         description: 'Responsive and minimal personal site',
