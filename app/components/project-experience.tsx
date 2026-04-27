@@ -121,7 +121,7 @@ const ProjectExperience = () => {
     const projects = useMemo(() => PROJECTS.map(proj => <Project key={proj.name} {...proj} />), []);
 
     return (
-        <SectionCard command="projects" className="2xl:rounded-l-none bg-orange-50 dark:bg-[#1E2A35] gap-5">
+        <SectionCard command="projects" className="2xl:rounded-l-none bg-emerald-50 dark:bg-[#1E2A35] gap-5">
             <div className="flex-1 flex flex-col justify-center p-10">
                 <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-3 lg:grid-cols-3">
                     {projects}
